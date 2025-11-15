@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Introduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .navbar-light .navbar-nav .nav-link {
+            color: blue;
+        }
+        .navbar-light .navbar-nav .nav-link.active {
+            background-color: blue;
+            color: white;
+        }
+        .bootstrap-framework-header {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .sidebar-b-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .dl-horizontal-custom dt {
+            float: left;
+            clear: left;
+            width: 120px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .dl-horizontal-custom dd {
+            margin-left: 130px;
+        }
+        @media (max-width: 767.98px) {
+            .dl-horizontal-custom dt, .dl-horizontal-custom dd {
+                float: none;
+                clear: none;
+                width: auto;
+                text-align: left;
+                margin-left: 0;
+            }
+        }
+        .main-content-section {
+            border-bottom: 1px solid #dee2e6; /* Light grey line */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            <div class="container">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="border border-secondary rounded nav-link active bg-primary text-white" aria-current="page" href="#">Introduction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Grid System</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Components</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">JS Plugins</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Getting started</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Author</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-4">
+            <div class="row">
+
+                <div class="col-md-9">
+                    <section class="main-content-section">
+                        <h1>Bootstrap</h1>
+                        <h2>Introduction to Bootstrap</h2>
+                        <p class="text-muted">Bootstrap is a popular front-end framework for developing responsive and mobile-first websites and web applications. Initially created by Mark Otto and Jacob Thornton at Twitter, it was released as an open-source project in 2011. Bootstrap simplifies web development by providing a set of HTML, CSS, and JavaScript components, allowing for the rapid creation of clean and user-friendly interfaces.</p>
+                    </section>
+
+                    <section class="main-content-section">
+                        <h2>Grid System and Responsiveness</h2>
+                        <p>At its core, Bootstrap utilizes a grid system based on a 12-column layout, offering developers a flexible and responsive structure for designing web pages. This system allows for easy scaling of components. This system adopts the use of predefined responsive design breakpoints, enabling websites to adapt seamlessly to desktops, tablets, and mobile phones without the need for extensive custom coding.</p>
+                    </section>
+
+                    <section class="main-content-section">
+                        <h2>Pre-styled Components and Utilities</h2>
+                        <p>One of the core features of Bootstrap is its extensive collection of pre-styled components and utilities, including navigation bars, buttons, forms, and typography. These components are designed with modern design principles in mind, providing developers with a consistent and aesthetically pleasing toolkit for building visually appealing interfaces. Moreover, Bootstrap's modular architecture allows developers to customize and extend its functionality to suit the specific requirements of their projects.</p>
+                    </section>
+
+                    <section class="main-content-section">
+                        <h2>JavaScript Plugin Support</h2>
+                        <p>Bootstrap provides robust support for JavaScript plugins, such as modals, carousels, and tooltips, which enhance the interactivity and user experience of websites. These plugins are easy to integrate into Bootstrap-based projects, and are thoroughly documented, making it straightforward for developers to incorporate advanced functionality into their designs.</p>
+                    </section>
+
+                    <section class="main-content-section">
+                        <h2>Active Community and Ecosystem</h2>
+                        <p>In addition to its rich set of features and components, Bootstrap boasts a vibrant and active community of developers who contribute plugins, themes, and extensions to the framework. This collaborative ecosystem fosters innovation and enables developers to leverage the collective expertise of the Bootstrap community to create cutting-edge web experiences. As a result, Bootstrap continues to be one of the most widely used front-end frameworks in the web development industry, powering millions of websites and applications worldwide.</p>
+                    </section>
+
+                    <section class="main-content-section">
+                        <h2>Getting started</h2>
+                        <pre class="border border-secondary: #dee2e6 "><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Bootstrap demo&lt;/title&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                    </section>
+
+                    <section class="main-content-section">
+                        <h2>Author</h2>
+                        <p>Loreta Ķirse</p>
+                    </section>
+                </div>
+
+                <aside class="col-md-3 min-vh-100">
+                    <div class="card">
+                        <div class="card-header bootstrap-framework-header">
+                            Bootstrap Framework
+                        </div>
+                        <div class="card-body">
+                            <img src="Bphoto.jpg" alt="Bootstrap B Logo" class="sidebar-b-image mb-3"> 
+                            <dl class="dl-horizontal-custom">
+                                <p><b>Developer(s)</b></p>
+                                <p>Mark Otto, Jacob Thornton, and contributors</p>
+
+                                <p><b>Initial release</b></p>
+                                <p>2011; 11 years ago</p>
+
+                                <p><b>Stable release</b></p>
+                                <p>v5.3.2 (September 2023; 5 months ago)</p>
+
+                                <p><b>Written in</b></p>
+                                <p>HTML, CSS, JavaScript</p>
+
+                                <p><b>License</b></p>
+                                <p>MIT License</p>
+
+                                <p><b>Website</b></p>
+                                <p><a href="https://getbootstrap.com" target="_blank">getbootstrap.com</a></p>
+                            </dl>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
